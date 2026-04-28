@@ -4,7 +4,7 @@ body, html {
     padding: 0;
     width: 100%;
     height: 100%;
-    background-color: #ba2025;
+    background-color: #8a1813;
     /* background: linear-gradient(135deg, #ba2025 50%, #e2353b 50%); */
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@ body, html {
 /* 5. Image sizes are now set as percentages of the canvas */
 .kit, .kat {
     position: absolute;
-    max-width: 30%; /* Will always take up exactly 30% of the canvas width, scaling perfectly */
+    max-width: 20%; /* Will always take up exactly 30% of the canvas width, scaling perfectly */
     height: auto;   /* Maintains the image's original proportions */
 }
 
@@ -61,6 +61,6 @@ body, html {
 }
 
 .kat {
-    left: 70%;
-    top: 65%;
+    left: 80%;
+    top: 80%;
 }
