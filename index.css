@@ -5,6 +5,8 @@ body, html {
     width: 100%;
     height: 100%;
     background-color: #8a1813;
+    background-image: url('imagenes/pattern.png');
+    background-repeat: repeat;
     /* background: linear-gradient(135deg, #ba2025 50%, #e2353b 50%); */
     display: flex;
     justify-content: center;
