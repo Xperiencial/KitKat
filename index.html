@@ -9,9 +9,13 @@
 <body>
     
     <div class="invitation-canvas">
-        <video class="video" autoplay loop playsinline>
+        <video id="heroVideo" class="video" autoplay loop muted playsinline>
             <source src="video/InvitacionEventoKitKat.mp4" type="video/mp4">
         </video>
+
+        <div id="playOverlay" class="play-overlay">
+            <div class="play-overlay__text">Toca para reproducir con sonido</div>
+        </div>
 
         <div class="content-wrapper">
             <img class="kat" id="" src="imagenes/Kat.png" alt="Kat Piece">
@@ -19,5 +23,17 @@
         </div>
     </div>
 
+    <script>
+        const video = document.getElementById('heroVideo');
+        const overlay = document.getElementById('playOverlay');
+
+        overlay.addEventListener('click', () => {
+            if (video.muted) {
+                video.muted = false;
+                video.play().catch(() => {});
+            }
+            overlay.classList.add('hidden');
+        });
+    </script>
 </body>
 </html>
